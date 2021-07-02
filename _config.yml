@@ -1,0 +1,39 @@
+collections:
+  authors:
+    output: true
+  themes:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+gems:
+  - jekyll-paginate-v2
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+
+
+pagination:
+  enabled: true
+  per_page: 5
+  title: 'Главная'
+  limit: 0
+
+
